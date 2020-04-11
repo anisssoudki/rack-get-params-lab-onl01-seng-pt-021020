@@ -23,7 +23,7 @@ class Application
           else
               @@cart.each { |item| resp.write "#{item}\n"}
           end    
-           elsif req.path.match(/add/)
+    elsif req.path.match(/add/)
           if !@@items.include?(param)
               resp.write "We don't have that item"
           else    
